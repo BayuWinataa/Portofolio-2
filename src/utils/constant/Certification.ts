@@ -1,9 +1,9 @@
-export interface IEducation {
+export interface ICertification {
   title: string
   issuer: string
 }
 
-export const educationData: IEducation[] = [
+export const certificationData: ICertification[] = [
   { title: 'Belajar Dasar Manajemen Proyek', issuer: 'Dicoding Indonesia' },
   {
     title: 'Junior Web Developer (Vocational School Graduate Academy)',

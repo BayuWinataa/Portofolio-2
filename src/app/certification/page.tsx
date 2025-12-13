@@ -2,18 +2,18 @@
 
 import { motion } from 'framer-motion'
 import TextSection from '@/components/common/TextSection'
-import { educationData } from '@/utils/constant/Education'
+import { certificationData } from '@/utils/constant/Certification'
 
-export default function Education() {
+export default function Certification() {
   return (
     <div className="xl:px-40 2xl:px-64">
       <TextSection
-        icon="🎓"
-        text="My Education"
+        icon="📜"
+        text="My Certification"
         classNames="mb-10 text-center"
       />
       <div className="flex flex-wrap items-center justify-center gap-5">
-        {educationData.map(({ title, issuer }, index: number) => (
+        {certificationData.map(({ title, issuer }, index: number) => (
           <motion.div
             key={index}
             whileInView={{ scale: 1 }}
