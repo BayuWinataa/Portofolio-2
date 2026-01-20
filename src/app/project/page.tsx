@@ -6,6 +6,7 @@ import TextSection from '@/components/common/TextSection'
 import { useState } from 'react'
 import { IProject } from '@/utils/interface/Project'
 import { GithubStats } from '@/components/common/GithubStats'
+import { MonkeyTypeStats } from '@/components/common/MonkeyTypeStats'
 import { projectsData } from '@/utils/constant/Projects'
 
 export default function Project() {
@@ -17,6 +18,9 @@ export default function Project() {
       <div>
         <div className="my-10 hidden justify-center md:flex">
           <GithubStats />
+        </div>
+        <div className="my-10 hidden justify-center md:flex">
+          <MonkeyTypeStats />
         </div>
         <div className="my-4 flex justify-center gap-4 font-semibold text-[#616D8A] dark:text-white sm:gap-6 md:gap-8 lg:gap-4">
           <button
@@ -50,6 +54,25 @@ export default function Project() {
           </button>
           <button
             className={`group relative flex cursor-pointer flex-col items-start justify-center`}
+            onClick={() => setFilter('mobile')}
+          >
+            <span
+              className={`absolute bottom-0 h-1 ${
+                filter == 'mobile' ? 'w-full' : 'w-0'
+              } rounded-md bg-orange-primary transition-all duration-300 ease-in-out group-hover:w-full`}
+            ></span>
+            <p>
+              Mobile{' '}
+              {filter == 'mobile' &&
+                `(${
+                  projectsData.filter(
+                    (item: IProject) => item.type === 'mobile',
+                  ).length
+                })`}
+            </p>
+          </button>
+          <button
+            className={`group relative flex cursor-pointer flex-col items-start justify-center`}
             onClick={() => setFilter('ui-ux')}
           >
             <span
@@ -75,6 +98,7 @@ export default function Project() {
           .filter((item: IProject) => {
             if (filter === 'all') return true
             if (filter === 'web') return item.type === 'web'
+            if (filter === 'mobile') return item.type === 'mobile'
             if (filter === 'ui-ux') return item.type === 'ui-ux'
             return item.type === filter
           })

@@ -60,7 +60,12 @@ export default function Home() {
         <h2 className="text-xl font-bold dark:text-white md:text-3xl">
           I&apos;m{' '}
           <TypeAnimation
-            sequence={['Frontend Developer', 5000, 'Frontend Developer', 5000]}
+            sequence={[
+              'Fullstack Developer',
+              5000,
+              'Wordpress Developer',
+              5000,
+            ]}
             wrapper="span"
             speed={40}
             cursor={true}
@@ -70,9 +75,12 @@ export default function Home() {
           />
         </h2>
         <p className="max-w-lg text-center text-sm dark:text-white md:max-w-2xl md:text-left md:text-base">
-          I am a <b>Frontend Developer</b> from Indonesia, I build clean,
-          responsive web & mobile interfaces and love turning ideas into smooth
-          user experiences.
+          I am a <b>Fullstack Developer</b> &{' '}
+          <span className="inline-block rotate-3 bg-orange-primary px-2 py-1 font-bold">
+            Wordpress Developer
+          </span>
+          from Indonesia, I build clean, responsive web & mobile interfaces and
+          love turning ideas into smooth user experiences.
         </p>
         <div className="flex gap-4">
           <a

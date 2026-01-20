@@ -118,9 +118,10 @@ export default function About() {
         <p className="mt-5 text-justify text-base text-secondary-text md:mt-0 lg:w-1/2 xl:text-lg">
           I am an undergraduate student majoring in{' '}
           <b>Informatics Engineering</b> at <b>Universitas Malikussaleh</b>,
-          with a strong interest in <b>Front-End Web Development</b>. I focus on
+          with a strong interest in <b>Fullstack Web Development</b>. I focus on
           building responsive, user-friendly web interfaces and continuously
-          improving my skills within the modern JavaScript ecosystem.
+          improving my skills within the modern JavaScript & Typescript
+          ecosystem.
           <br />
           <br />I have hands-on experience using <b>ReactJS</b> and{' '}
           <b>NextJS</b> to translate UI/UX designs into functional and

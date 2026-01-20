@@ -2,101 +2,164 @@ import { IProject } from '../interface/Project'
 
 export const projectsData: IProject[] = [
   {
-    title: 'E-Commerce Platform',
-    image: '/projects/ecommerce.jpg',
-    deskripsi:
-      'Full-stack e-commerce platform with payment integration, product management, and user authentication.',
-    description: 'Built with Next.js, TypeScript, and Stripe API. Features include product catalog, shopping cart, order management, and admin dashboard.',
-    type: 'web',
-    demo: 'https://ecommerce-demo.example.com',
-    repo: 'https://github.com/username/ecommerce-platform',
-  },
-  {
-    title: 'Portfolio Website',
+    title: 'Portfolio V2',
     image: '/projects/portfolio.jpg',
     deskripsi:
-      'Modern portfolio website built with Next.js, TypeScript, and Tailwind CSS.',
-    description: 'Personal portfolio showcasing projects, skills, and experience with smooth animations and dark mode support.',
+      'Modern portfolio website built with Next.js 14, TypeScript, and Tailwind CSS.',
+    description:
+      'Personal portfolio showcasing projects, skills, and experience with smooth animations, dark mode support, and interactive components.',
     type: 'web',
-    demo: 'https://portfolio.example.com',
-    // No repo for this one
+    repo: 'https://github.com/BayuWinataa/Portofolio-2',
   },
   {
-    title: 'Social Media Dashboard',
-    image: '/projects/dashboard.jpg',
+    title: 'UangKu',
+    image: '/projects/uangku.jpg',
+    deskripsi: 'Personal finance management application built with Flutter.',
+    description:
+      'Mobile app for tracking expenses, managing budgets, and monitoring financial health with clean UI and intuitive design.',
+    type: 'mobile',
+    repo: 'https://github.com/BayuWinataa/UangKu',
+  },
+  {
+    title: 'RetailHub',
+    image: '/projects/retailhub.jpg',
+    deskripsi: 'Retail management system for managing inventory and sales.',
+    description:
+      'Complete retail management solution built with Flutter for POS system, inventory tracking, and sales analytics.',
+    type: 'mobile',
+    repo: 'https://github.com/BayuWinataa/RetailHub',
+  },
+  {
+    title: 'Hotel Manager Pro',
+    image: '/projects/hotel.jpg',
     deskripsi:
-      'Analytics dashboard for social media metrics with charts and real-time data.',
-    description: 'Real-time analytics dashboard displaying metrics from multiple social media platforms with Chart.js visualization.',
+      'Hotel management system with booking, room management, and guest services.',
+    description:
+      'Comprehensive hotel management application built with Flutter for handling reservations, room assignments, and guest check-in/check-out.',
+    type: 'mobile',
+    repo: 'https://github.com/BayuWinataa/Hotel-Manager-Pro-',
+  },
+  {
+    title: 'QuickCook',
+    image: '/projects/quickcook.jpg',
+    deskripsi:
+      'Recipe application with cooking instructions and ingredient lists.',
+    description:
+      'Mobile recipe app with search functionality, step-by-step cooking guides, and favorite recipes management built with Flutter.',
+    type: 'mobile',
+    repo: 'https://github.com/BayuWinataa/QuickCook',
+  },
+  {
+    title: 'IdeaNest',
+    image: '/projects/ideanest.jpg',
+    deskripsi: 'Note-taking and idea management application.',
+    description:
+      'Digital note-taking app for organizing thoughts, ideas, and tasks with categories and search features built with Flutter.',
+    type: 'mobile',
+    repo: 'https://github.com/BayuWinataa/ideaNest',
+  },
+  {
+    title: 'Laundryku',
+    image: '/projects/laundry.jpg',
+    deskripsi:
+      'Laundry service management system for tracking orders and customers.',
+    description:
+      'Complete laundry management solution with order tracking, customer management, and payment processing built with Flutter.',
+    type: 'mobile',
+    repo: 'https://github.com/BayuWinataa/laundryku',
+  },
+  {
+    title: 'Manajemen Kafe',
+    image: '/projects/cafe.jpg',
+    deskripsi:
+      'Cafe management system with menu, orders, and table management.',
+    description:
+      'Restaurant/cafe POS system with order management, menu customization, and table reservations built with Flutter.',
+    type: 'mobile',
+    repo: 'https://github.com/BayuWinataa/manajemenKafe',
+  },
+  {
+    title: 'Blog Platform',
+    image: '/projects/blog.jpg',
+    deskripsi: 'Full-stack blog platform with CMS and content management.',
+    description:
+      'Modern blog platform built with Next.js and TypeScript featuring markdown support, categories, tags, and admin dashboard.',
     type: 'web',
-    demo: 'https://socialdash.example.com',
-    repo: 'https://github.com/username/social-dashboard',
+    repo: 'https://github.com/BayuWinataa/Blog',
   },
   {
-    title: 'Recipe Finder App',
-    image: '/projects/recipe.jpg',
+    title: 'Booking Flight Ticket',
+    image: '/projects/flight.jpg',
     deskripsi:
-      'Web application for searching and saving recipes with ingredient filtering.',
-    description: 'Responsive recipe app with advanced filtering, search functionality, and ability to save favorites to local storage.',
+      'Flight booking system with search, booking, and payment integration.',
+    description:
+      'Full-stack flight booking application built with Next.js featuring flight search, seat selection, booking management, and payment processing.',
     type: 'web',
-    // Only repo available
-    repo: 'https://github.com/username/recipe-finder',
+    repo: 'https://github.com/BayuWinataa/Full-Stack-JavaScript-Developer-Next-JS-Booking-Flight-Ticket',
   },
   {
-    title: 'Banking App UI Design',
-    image: '/projects/banking-ui.jpg',
-    deskripsi:
-      'Modern banking app UI/UX design with intuitive navigation and clean interface for mobile users.',
-    description: 'Complete UI/UX design system created in Figma with component library, user flows, and high-fidelity prototypes.',
-    type: 'ui-ux',
-    demo: 'https://figma.com/file/banking-design',
-    // UI design typically doesn\'t need repo
-  },
-  {
-    title: 'Food Delivery App',
-    image: '/projects/food-ui.jpg',
-    deskripsi:
-      'Complete UI/UX design for food delivery application with user-friendly ordering flow.',
-    description: 'End-to-end design for mobile food delivery app including wireframes, prototypes, and design specifications.',
-    type: 'ui-ux',
-    demo: 'https://figma.com/file/food-delivery-design',
-    repo: 'https://github.com/username/food-delivery-prototype',
-  },
-  {
-    title: 'E-Learning Platform',
-    image: '/projects/elearning-ui.jpg',
-    deskripsi:
-      'Educational platform UI design with interactive elements and responsive layout.',
-    description: 'Comprehensive learning platform design with course listings, student dashboards, and interactive lesson components.',
-    type: 'ui-ux',
-    // Only live prototype
-    demo: 'https://elearning-prototype.vercel.app',
-  },
-  {
-    title: 'Travel Booking Website',
-    image: '/projects/travel.jpg',
-    deskripsi:
-      'Responsive travel booking website with search, filters, and booking management system.',
-    description: 'Full-featured travel booking platform with destination search, price comparison, booking history, and user reviews.',
+    title: 'Game Store',
+    image: '/projects/gamestore.jpg',
+    deskripsi: 'E-commerce platform for digital games with cart and checkout.',
+    description:
+      'Gaming marketplace built with Next.js and TypeScript featuring game catalog, shopping cart, user reviews, and secure checkout.',
     type: 'web',
-    demo: 'https://travelbooking.example.com',
-    repo: 'https://github.com/username/travel-booking',
+    repo: 'https://github.com/BayuWinataa/game-store',
   },
   {
-    title: 'Weather App',
-    image: '/projects/weather.jpg',
-    deskripsi: 'Real-time weather application with forecast and location-based services.',
-    description: 'Weather app using OpenWeather API with 7-day forecast, location search, and temperature unit conversion.',
+    title: 'ShopMate',
+    image: '/projects/shopmate.jpg',
+    deskripsi: 'E-commerce shopping assistant with product recommendations.',
+    description:
+      'Shopping companion app with product search, price comparison, wishlist management, and smart recommendations.',
     type: 'web',
-    // Only repository available
-    repo: 'https://github.com/username/weather-app',
+    repo: 'https://github.com/BayuWinataa/ShopMate',
   },
   {
-    title: 'Task Management Tool',
-    image: '/projects/tasks.jpg',
-    deskripsi: 'Collaborative task management application with real-time updates.',
-    description: 'Team task management tool with kanban boards, task assignment, deadlines, and progress tracking.',
+    title: 'Job Hunt Dashboard',
+    image: '/projects/jobhunt.jpg',
+    deskripsi:
+      'Job search platform dashboard with listings and application tracking.',
+    description:
+      'Job search dashboard featuring job listings, application status tracking, company profiles, and saved searches.',
     type: 'web',
-    demo: 'https://taskapp.example.com',
-    repo: 'https://github.com/username/task-management',
+    repo: 'https://github.com/BayuWinataa/job-hunt-dashboard',
+  },
+  {
+    title: 'Fake Store',
+    image: '/projects/fakestore.jpg',
+    deskripsi: 'E-commerce demo using Fake Store API with product catalog.',
+    description:
+      'E-commerce demo application built with TypeScript using Fake Store API for product listings, cart management, and checkout flow.',
+    type: 'web',
+    repo: 'https://github.com/BayuWinataa/Fake-Store',
+  },
+  {
+    title: 'Perpustakaan Lhokseumawe',
+    image: '/projects/library.jpg',
+    deskripsi:
+      'Library management system for book cataloging and member management.',
+    description:
+      'Complete library management system with book catalog, member registration, borrowing tracking, and late fee management.',
+    type: 'web',
+    repo: 'https://github.com/BayuWinataa/Perpustakaan-Lhokseumawe',
+  },
+  {
+    title: 'Startup Website',
+    image: '/projects/startup.jpg',
+    deskripsi: 'Landing page for startup company with modern design.',
+    description:
+      'Responsive startup landing page built with HTML/CSS featuring hero section, features showcase, team profiles, and contact form. ⭐ 1 star',
+    type: 'web',
+    repo: 'https://github.com/BayuWinataa/Startup-Website',
+  },
+  {
+    title: 'Manajemen Siswa',
+    image: '/projects/student.jpg',
+    deskripsi: 'Student management system for schools with grade tracking.',
+    description:
+      'School management system built with PHP featuring student registration, grade management, attendance tracking, and report generation.',
+    type: 'web',
+    repo: 'https://github.com/BayuWinataa/Manajemen-Siswa',
   },
 ]

@@ -4,6 +4,16 @@ export interface ICertification {
 }
 
 export const certificationData: ICertification[] = [
+  {
+    title: 'Belajar Machine Learning untuk Pemula',
+    issuer: 'Dicoding Indonesia',
+  },
+  {
+    title:
+      'Full-Stack JavaScript Developer Next JS: Booking Flight Ticket  ',
+    issuer: 'BuildWithAngga',
+  },
+  { title: 'Prisma ORM Fundamentals', issuer: 'Udemy' },
   { title: 'Belajar Dasar Manajemen Proyek', issuer: 'Dicoding Indonesia' },
   {
     title: 'Junior Web Developer (Vocational School Graduate Academy)',
