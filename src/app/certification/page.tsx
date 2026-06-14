@@ -7,6 +7,7 @@ import { certificationData } from '@/utils/constant/Certification'
 export default function Certification() {
   return (
     <div className="xl:px-40 2xl:px-64">
+      <h1 className="sr-only">Sertifikasi Profesional Bayu Winata</h1>
       <TextSection
         icon="📜"
         text="My Certification"
@@ -23,7 +24,7 @@ export default function Certification() {
             className="flex h-40 w-full max-w-[288px] flex-col justify-between rounded-xl border-2 border-black-primary bg-white p-4 shadow-button-card xl:w-72"
           >
             <div className="flex flex-col">
-              <h1 className="text-xl font-bold text-black-primary">{title}</h1>
+              <h3 className="text-xl font-bold text-black-primary">{title}</h3>
             </div>
             <p className="mt-auto text-gray-700">{issuer}</p>
           </motion.div>

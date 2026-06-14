@@ -14,6 +14,7 @@ export default function Project() {
 
   return (
     <div className="">
+      <h1 className="sr-only">Proyek Web &amp; Mobile oleh Bayu Winata</h1>
       <TextSection icon="⚒️" text="it's My Projects." />
       <div>
         <div className="my-10 hidden justify-center md:flex">

@@ -10,12 +10,13 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: '"api.microlink.io"',
+        hostname: 'api.microlink.io',
         port: '',
-        pathname: '/',
+        pathname: '/**',
       },
     ],
   },
 }
 
 module.exports = nextConfig
+

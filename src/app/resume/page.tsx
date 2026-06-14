@@ -3,6 +3,7 @@ import TextSection from '@/components/common/TextSection'
 export default function Resume() {
   return (
     <div className="flex flex-col items-center justify-center">
+      <h1 className="sr-only">Resume &amp; CV Bayu Winata — Fullstack Developer Indonesia</h1>
       <TextSection icon="📄" text="it's My Resume." />
       <div className="mt-5 flex w-full flex-col items-end md:mt-10 xl:w-[810px]">
         <div className="flex gap-3">

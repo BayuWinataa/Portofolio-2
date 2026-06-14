@@ -57,9 +57,9 @@ export default function ProjectCard({
       <div className="dark:bg-dark-secondary absolute bottom-0 h-10 w-full border-t-2 border-black-primary bg-yellow-primary p-2 transition-all duration-300 group-hover:h-[60%] lg:group-hover:h-2/4">
         <div className="flex flex-col gap-1">
           <div className="flex items-center justify-between gap-2">
-            <h1 className="line-clamp-1 flex-1 font-bold text-black-primary">
+            <h3 className="line-clamp-1 flex-1 font-bold text-black-primary">
               {title}
-            </h1>
+            </h3>
             <span className="whitespace-nowrap rounded-lg bg-black px-2 py-1 text-xs font-semibold text-white">
               {type}
             </span>

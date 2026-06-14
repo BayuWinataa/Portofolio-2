@@ -26,7 +26,7 @@ export default function ExperienceTimeline({
       )}
     >
       {!position && <DotTimeline type={type} />}
-      <motion.div
+      <motion.article
         whileInView={{ opacity: 1, scale: 1 }}
         initial={{ opacity: 0, scale: 0 }}
         transition={{ duration: 0.3 }}
@@ -38,13 +38,13 @@ export default function ExperienceTimeline({
             : 'col-start-6 col-end-10 my-4 mr-auto',
         )}
       >
-        <h2 className="mb-1 text-lg font-bold md:text-2xl">{title}</h2>
-        <h4 className="text-sm font-semibold md:text-lg">{company}</h4>
+        <h3 className="mb-1 text-lg font-bold md:text-2xl">{title}</h3>
+        <p className="text-sm font-semibold md:text-lg">{company}</p>
         <p className="overflow-hidden text-justify leading-tight">
           {description}
         </p>
         <p className="md:text-lg">{date}</p>
-      </motion.div>
+      </motion.article>
       {position && <DotTimeline type={type} />}
     </motion.div>
   )

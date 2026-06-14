@@ -56,6 +56,7 @@ const ScrambleText: React.FC<Props> = ({ children }) => {
 
   return (
     <motion.h1
+      aria-label={TARGET_TEXT}
       whileHover={{
         scale: 1.025,
       }}

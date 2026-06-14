@@ -25,7 +25,8 @@ export default function About() {
   }
 
   return (
-    <section className="text-black-primary">
+    <section className="text-black-primary" aria-label="Tentang Bayu Winata">
+      <h1 className="sr-only">Tentang Bayu Winata — Fullstack Developer Aceh, Indonesia</h1>
       <TextSection icon="😎" text="it's More About Me." />
       <div className="mx-auto mb-12 mt-8 flex flex-col items-center justify-center md:gap-10 lg:flex-row">
         <div className="relative aspect-auto h-60 w-60 items-baseline justify-center rounded-3xl border-4 border-black-primary bg-yellow-primary object-cover shadow-image-card shadow-black-primary md:h-96 md:w-1/2 xl:w-96">
@@ -109,26 +110,27 @@ export default function About() {
           </div>
           <Image
             src={'/me.png'}
-            alt="Picture of the author"
+            alt="Foto Bayu Winata — Fullstack Developer dari Aceh, Indonesia"
             width={1000}
             height={1000}
             className="aspect-auto h-full w-full rounded-lg object-cover px-8"
+            priority
           />
         </div>
         <p className="mt-5 text-justify text-base text-secondary-text md:mt-0 lg:w-1/2 xl:text-lg">
-          I am an undergraduate student majoring in{' '}
-          <b>Informatics Engineering</b> at <b>Universitas Malikussaleh</b>,
-          with a strong interest in <b>Fullstack Web Development</b>. I focus on
-          building responsive, user-friendly web interfaces and continuously
-          improving my skills within the modern JavaScript & Typescript
-          ecosystem.
+          Saya adalah mahasiswa S1 jurusan{' '}
+          <b>Teknik Informatika</b> di <b>Universitas Malikussaleh</b>,
+          dengan minat besar di bidang <b>Fullstack Web Development</b>. Saya
+          berfokus membangun antarmuka web yang responsif dan ramah pengguna,
+          serta terus meningkatkan kemampuan dalam ekosistem JavaScript &amp;
+          TypeScript modern.
           <br />
-          <br />I have hands-on experience using <b>ReactJS</b> and{' '}
-          <b>NextJS</b> to translate UI/UX designs into functional and
-          responsive web applications, as well as integrating RESTful APIs. I
-          have also worked with <b>WordPress</b> and been involved in various
-          real-world projects through internships, freelance work, and
-          project-based programs.
+          <br />Saya memiliki pengalaman langsung menggunakan <b>ReactJS</b>{' '}
+          dan <b>Next.js</b> untuk menerjemahkan desain UI/UX menjadi aplikasi
+          web fungsional dan responsif, serta mengintegrasikan RESTful API. Saya
+          juga berpengalaman dengan <b>WordPress</b> dan telah terlibat dalam
+          berbagai proyek nyata melalui magang, pekerjaan freelance, dan program
+          berbasis proyek.
         </p>
       </div>
       <TextSection

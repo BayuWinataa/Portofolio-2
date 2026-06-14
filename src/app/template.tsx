@@ -14,9 +14,9 @@ export default function Template({ children }: { children: React.ReactNode }) {
         className="fixed left-0 top-0 z-50 flex min-h-screen w-1/4 items-center justify-center bg-yellow-primary shadow-button shadow-background"
       >
         <div className="flex flex-col">
-          <h1 className="text-center text-xl font-bold text-black-primary md:text-3xl">
+          <span className="text-center text-xl font-bold text-black-primary md:text-3xl" aria-hidden="true">
             Hello
-          </h1>
+          </span>
         </div>
       </div>
       <div
@@ -38,9 +38,9 @@ export default function Template({ children }: { children: React.ReactNode }) {
         className="fixed left-2/4 top-0 z-50 flex min-h-screen w-1/4 items-center justify-center bg-yellow-primary shadow-button shadow-background"
       >
         <div className="flex flex-col">
-          <h1 className="text-center text-xl font-bold text-black-primary md:text-3xl">
+          <span className="text-center text-xl font-bold text-black-primary md:text-3xl" aria-hidden="true">
             World
-          </h1>
+          </span>
         </div>
       </div>
       <div

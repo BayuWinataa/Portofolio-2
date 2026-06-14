@@ -16,7 +16,7 @@ export default function TextSection({
 }: TextSectionProps) {
   return (
     <div className={twMerge('relative font-semibold xl:text-xl', classNames)}>
-      <p className="relative mx-auto w-fit text-2xl text-black-primary dark:text-white md:text-4xl">
+      <h2 className="relative mx-auto w-fit text-2xl text-black-primary dark:text-white md:text-4xl">
         <motion.span
           whileInView={{ width: '100%' }}
           initial={{ width: 0 }}
@@ -26,7 +26,7 @@ export default function TextSection({
         ></motion.span>
         <motion.span className="text-3xl md:text-[48px]">{icon}</motion.span>
         {text}
-      </p>
+      </h2>
     </div>
   )
 }
